@@ -23,27 +23,27 @@ def package_files(
     return paths
 
 
-print(package_files('pyg_sphinx_theme/static'))
+print(package_files('pygma_sphinx_theme/static'))
 
 setup(
-    name='pyg_sphinx_theme',
+    name='pygma_sphinx_theme',
     version=__version__,
-    author='PyG Team',
-    author_email='team@pyg.org',
-    url='https://github.com/pyg-team/pyg_sphinx_theme',
+    author='pygma Team',
+    author_email='rainorangelemon@gmail.com',
+    url='https://github.com/rainorangelemon/pygma_sphinx_theme',
     install_requires=[
         'sphinx==5.1.1',
         'sphinx_rtd_theme>=1.0',
     ],
     package_data={
-        'pyg_sphinx_theme': [
+        'pygma_sphinx_theme': [
             'theme.conf',
-            *package_files('pyg_sphinx_theme/static', ['css', 'png', 'svg']),
+            *package_files('pygma_sphinx_theme/static', ['css', 'png']),
         ]
     },
     entry_points={
         'sphinx.html_themes': [
-            'pyg_sphinx_theme = pyg_sphinx_theme',
+            'pygma_sphinx_theme = pygma_sphinx_theme',
         ]
     },
     packages=find_packages(),

@@ -1,1 +1,1 @@
-# PyG Sphinx Theme
+# PyGMA Sphinx Theme
